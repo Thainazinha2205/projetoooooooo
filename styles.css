@@ -1,0 +1,80 @@
+/* Estilos Globais */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(120deg, #585858, #013243);
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+  }
+  
+  /* Container dos Flashcards */
+  .flashcard-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  /* Flashcards */
+  .flashcard {
+    width: 250px;
+    height: 250px;
+    background-color: #000000;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .flashcard:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Categoria */
+  .category {
+    font-size: 1rem;
+    background-color: #000000;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: white;
+    display: inline-block;
+    align-self: flex-start;
+  }
+  
+  /* Conteúdo do Cartão */
+  .content {
+    text-align: left;
+  }
+  
+  .question {
+    font-size: 1.2rem;
+  }
+  
+  .answer {
+    font-size: 1rem;
+    color: #00ff9f;
+    display: none;
+  }
+  
+  .flashcard.revealed .answer {
+    display: block;
+  }
+  
+  /* Footer */
+  footer {
+    margin-top: 30px;
+    font-size: 0.9rem;
+    color: #bbb;
+  }
+  
